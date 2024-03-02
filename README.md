@@ -12,7 +12,11 @@ What makes finding relavant information on some websites more challenging than a
 Also if the website's search engine does not frequently **update its index** or if certain areas are not indexed at all, users may not be able to find newly added content or specific types of content.
 
 ## Solution
-A Chatbot has the ability to have a **natural conversation** with the user and if it has the knowledge of the whole website, intranet or blog can then give the user great recommendations.
+A Chatbot has the ability to have a **natural conversation** with the user and if it has the knowledge of the whole Website, Intranet or Blog can then give the user great recommendations. The user doesn't have to guess specific keywords or phrases that the search engine might recognize.
+
+They can also understand the **context of a query**, allowing them to provide more accurate and relevant responses. They can remember the context of a conversation over multiple interactions, refining their search results based on the ongoing dialogue.
+
+It's also **time saving** because the user doesn't have to sift through a list of search results but get the answer, link or product with the most relevant content based on the user's query.  
 
 ## How To
 First we need to get the information from our target website. The **knowledge** of our Chatbot so to speak. Most of the time this is done by scraping the website. Just make sure that you are not violating data privacy and/or store personal information without consent.
