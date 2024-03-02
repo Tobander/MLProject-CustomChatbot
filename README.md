@@ -17,4 +17,4 @@ The last thing we need to do is calling our **chat model** with the user's input
 
 So here are the basic steps visualized:
 
-<img width="870" alt="Workflow Custom Chatbot" src="https://github.com/Tobander/MLProject-CustomChatbot/assets/45336196/96f5dac3-1acb-47d0-a5b6-883cb23af242">
+<img width="870" alt="Workflow Custom Chatbot" src="https://github.com/Tobander/MLProject-CustomChatbot/assets/45336196/96f5dac3-1acb-47d0-a5b6-883cb23af242" width=100%>
