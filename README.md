@@ -1,4 +1,4 @@
-# 🔴What is a Custom Chatbot?
+# 🔴 What is a Custom Chatbot?
 
 ## Problem
 Today on so many websites, intranet sites or blogs there are search bars, that are either not giving any results or results that don't really capture what the user is asking. That is neither the user's nor the search bar's fault. It is mnore often just a problem of formulating the problem. Normally you are able to type in just a few words in a search bar. However, it would be much easier to describe your problem, what are you searching for or what you are iunterested in. Like you would talk to a real person.
@@ -10,3 +10,5 @@ A Chatbot has the ability to have a **natural conversation** with the user and i
 First we need to get the information from our target website. The **knowledge** of our Chatbot so to speak. Most of the time this is done by scraping the website. Just make sure that you are not violating data privacy and/or store personal information without consent.
 
 Then we need to put this data into an easy to read format. Most of the time this will be a JSON format but a database or other flat file formats can also make sense.
+
+The next thing is to get the **embeddings** for our data which means converting our products, articles or knowledge into vectors of numbers in a way that captures their meanings, relationships, or characteristics. To do this, we use OPenAI's `text-embedding-3-small`.
