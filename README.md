@@ -29,7 +29,8 @@ The last thing we need to do is calling our **chat model** with the user's input
 
 So here are the basic steps visualized:
 
-![slide](https://github.com/Tobander/MLProject-CustomChatbot/assets/45336196/030c76cc-f426-4649-91cd-03d81d769e93)
+![slide](https://github.com/Tobander/MLProject-CustomChatbot/assets/45336196/1c426a4f-a158-4375-a567-1552ff682791)
+
 
 # 🟢 Build the database or JSON file
 First thing we need to do is build the knowledge of our Chatbot. Meaning the products of your Online-Store or the guidlines and documents of your Intranet or the articles of your Blog. Most of the time the easiest way to do this, is to scrape the information. Again, please make sure beforehand that you are not violating any personal rights. For our Chatbot example I am using <a href="https://books.toscrape.com/index.html">Books to Scrape</a> which is a demo website for web scraping purposes. We are going to collect all Book titles and their product information like category, price, rating or if they are in stock and save everything in a JSON file.
