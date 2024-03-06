@@ -44,3 +44,5 @@ Up next we need to get the Embeddings for our data which is a vector (list) of f
 To get an Embedding, we send our complete product data to OpenAI's embeddings API endpoint and we will use it's latest model which is called `text-embedding-3-small`. The response will contain an Embedding which we then then also save in our JSON file. 
 
 By default, the length of the embedding vector will be 1536, so our product data will significantly grow in size in this step.
+
+📓 **Notebook:** You can find the complete code in get_embeddings.ipynb
