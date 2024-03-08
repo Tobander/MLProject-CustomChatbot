@@ -46,3 +46,14 @@ To get an Embedding, we send our complete product data to OpenAI's embeddings AP
 By default, the length of the embedding vector will be 1536, so our product data will significantly grow in size in this step.
 
 📓 **Notebook:** You can find the complete code in get_embeddings.ipynb
+
+# 🟢 Building the Front-End
+So the next step now is to build a simple GUI where the user can type in a question and receives a book recommendation. To be able to do this there are several steps. For the Front-End, we build a FLASK app with an input textfield and an output textarea. We then need a function that takes the user's input, calculates it's Embedding and then compares it to our Embedding database. We then take the best matching record and display its contents in the textarea.
+
+**A FLASK app** is a simple program that lets you create web applications. In our case we only need one page and need to tell FLASK what happens, when the user types in a question in the textfield.
+
+**To get the Embedding** we once again use the `text-embedding-3-small` model but we also need a function to calculate the similarity between the user's input and our database. To do this we use the before mentioned cosine similarity to check which of our books has the highest score and save all the information about it in a variable. We later need to feed this information to GPT-4 so we already bring it in a matching format.
+
+**To display the recommendation** we then return the varibale back to FLASK to show its contents in our textarea.
+
+📓 **Notebook:** You can find the complete code in app.ipynb
