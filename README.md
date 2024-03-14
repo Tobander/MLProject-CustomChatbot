@@ -61,4 +61,4 @@ So the next step now is to build a simple GUI where the user can type in a quest
 # 🟢 Teaching the Chatbot
 Now comes the interesting part. We are already able to get all the information about the best matching product for a user input. If we can teach this information to a Chatbot it will be able to talk with the user about it. We will use OpenAIs GPT-4 chatmodel for this. This model needs a SYSTEM message, that tells it how to behave, so what kind of answers it should give and how it should talk to the user. And we will also feed all the information we collected from our previous step as part of a USER message to it. Then we add the user's question to it and let GPT-4 do its work.
 
-📓 **Notebook:** You can find the complete code in #´app_V2.ipynb`
+📓 **Notebook:** You can find the complete code in ´app_V2.ipynb`
