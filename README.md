@@ -36,7 +36,7 @@ First thing we need to do is build the knowledge of our Chatbot. Meaning the pro
 
 For our Chatbot example I am using <a href="https://books.toscrape.com/index.html">Books to Scrape</a> which is a demo website for web scraping purposes. We are going to collect all Book titles and their product information like category, price, rating or if they are in stock and save everything in a JSON file.
 
-📓 **Notebook:** You will find the complete code in `scrape_website.ipynb` after the second video.
+📓 **Notebook:** You can find the complete code in `scrape_website.ipynb`.
 
 # 🟢 Get the Embeddings for the JSON file
 Up next we need to get the Embeddings for our data which is a vector (list) of floating point numbers. The distance between two vectors measures their relatedness. Small distances suggest high relatedness and large distances suggest low relatedness.
