@@ -31,14 +31,14 @@ So here are the basic steps visualized:
 
 ![slide](https://github.com/Tobander/MLProject-CustomChatbot/assets/45336196/1a45c5c8-ddde-47be-88b3-47135c867abc)
 
-# 🟢 Building the database or JSON file
+# 🟢 2. Building the database or JSON file
 First thing we need to do is build the knowledge of our Chatbot. Meaning the products of your Online-Store or the guidlines and documents of your Intranet or the articles of your Blog. Most of the time the easiest way to do this, is to scrape the information. Again, please make sure beforehand that you are not violating any personal rights. 
 
 For our Chatbot example I am using <a href="https://books.toscrape.com/index.html">Books to Scrape</a> which is a demo website for web scraping purposes. We are going to collect all Book titles and their product information like category, price, rating or if they are in stock and save everything in a JSON file.
 
 📓 **Notebook:** You can find the complete code in `scrape_website.ipynb`.
 
-# 🟢 Get the Embeddings for the JSON file
+# 🟢 3. Get the Embeddings for the JSON file
 Up next we need to get the Embeddings for our data which is a vector (list) of floating point numbers. The distance between two vectors measures their relatedness. Small distances suggest high relatedness and large distances suggest low relatedness.
 
 To get an Embedding, we send our complete product data to OpenAI's embeddings API endpoint and we will use it's latest model which is called `text-embedding-3-small`. The response will contain an Embedding which we then then also save in our JSON file. 
@@ -47,7 +47,7 @@ By default, the length of the embedding vector will be 1536, so our product data
 
 📓 **Notebook:** You will find the complete code in `get_embeddings.ipynb` after the second video.
 
-# 🟢 Building the Front-End
+# 🟢 4. Building the Front-End
 So the next step now is to build a simple GUI where the user can type in a question and receives a book recommendation. To be able to do this there are several steps. For the Front-End, we build a FLASK app with an input textfield and an output textarea. We then need a function that takes the user's input, calculates it's Embedding and then compares it to our Embedding database. We then take the best matching record and display its contents in the textarea.
 
 **A FLASK app** is a simple program that lets you create web applications. In our case we only need one page and need to tell FLASK what happens, when the user types in a question in the textfield.
@@ -58,7 +58,7 @@ So the next step now is to build a simple GUI where the user can type in a quest
 
 📓 **Notebook:** You will find the complete code in `app.ipynb` after the third video.
 
-# 🟢 Teaching the Chatbot
+# 🟢 5. Teaching the Chatbot
 Now comes the interesting part. We are already able to get all the information about the best matching product for a user input. If we can teach this information to a Chatbot it will be able to talk with the user about it. We will use OpenAIs GPT-4 chatmodel for this. This model needs a SYSTEM message, that tells it how to behave, so what kind of answers it should give and how it should talk to the user. And we will also feed all the information we collected from our previous step as part of a USER message to it. Then we add the user's question to it and let GPT-4 do its work.
 
 📓 **Notebook:** You will find the complete code in `app_V2.ipynb` after the fourth video.
