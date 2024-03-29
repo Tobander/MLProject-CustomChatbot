@@ -45,7 +45,7 @@ To get an Embedding, we send our complete product data to OpenAI's embeddings AP
 
 By default, the length of the embedding vector will be 1536, so our product data will significantly grow in size in this step.
 
-📓 **Notebook:** You will find the complete code in `get_embeddings.ipynb` after the third video.
+📓 **Notebook:** You can find the complete code in `get_embeddings.ipynb`.
 
 # 🟢 4. Building the Front-End
 So the next step now is to build a simple GUI where the user can type in a question and receives a book recommendation. To be able to do this there are several steps. For the Front-End, we build a FLASK app with an input textfield and an output textarea. We then need a function that takes the user's input, calculates it's Embedding and then compares it to our Embedding database. We then take the best matching record and display its contents in the textarea.
