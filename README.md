@@ -38,7 +38,7 @@ First thing we need to do is build the knowledge of our Chatbot. Meaning the pro
 
 For our Chatbot example I am using <a href="https://books.toscrape.com/index.html" target="_blank">Books to Scrape</a> which is a demo website for web scraping purposes. We are going to collect all Book titles and their product information like category, price, rating or if they are in stock and save everything in a JSON file.
 
-📓 **Notebook:** You can find the complete code in `scrape_website.ipynb`.
+📓 **Notebook:** You can find the complete code in `scrape_website.ipynb`.\n
 ▶️ **Video** You can find the YouTube video <a href="https://youtu.be/Jj9utw1UViI" target="_blank">here</a>.
 
 # 🟢 3. Get the Embeddings for the JSON file
