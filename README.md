@@ -31,7 +31,7 @@ So here are the basic steps visualized:
 
 ![slide](https://github.com/Tobander/MLProject-CustomChatbot/assets/45336196/1a45c5c8-ddde-47be-88b3-47135c867abc)
 
-▶️ **Video** You can find the YouTube video <a href="https://youtu.be/VZJ-HwAICcA">here</a>.
+▶️ **Video** You can find the YouTube video <a href="https://youtu.be/VZJ-HwAICcA" target="_blank">here</a>.
 
 # 🟢 2. Building the database or JSON file
 First thing we need to do is build the knowledge of our Chatbot. Meaning the products of your Online-Store or the guidlines and documents of your Intranet or the articles of your Blog. Most of the time the easiest way to do this, is to scrape the information. Again, please make sure beforehand that you are not violating any personal rights. 
@@ -50,6 +50,7 @@ To get an Embedding, we send our complete product data to OpenAI's embeddings AP
 By default, the length of the embedding vector will be 1536, so our product data will significantly grow in size in this step.
 
 📓 **Notebook:** You can find the complete code in `get_embeddings.ipynb`.
+
 ▶️ **Video** You can find the YouTube video <a href="https://youtu.be/ZT2s8jmwx2U" target="_blank">here</a>.
 
 # 🟢 4. Building the Front-End
